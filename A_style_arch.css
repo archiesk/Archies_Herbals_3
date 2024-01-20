@@ -1,0 +1,81 @@
+{margin:0;
+    padding:0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(LOGO_Archies_Herbals_Medium_white.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing:border-box;
+}
+
+.header{
+    height: 15%
+    display: fit-content;
+    overflow: hidden;
+    position: relative;
+}
+
+
+h1{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+
+}
+&::before {
+    content: '';
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+background-image: url(LOGO_Archies_Herbals_Transparent);
+background-size: cover;
+background-position: top center;
+background-repeat: repeat;
+opacity: 0.5;
+}
+p 
+{text-align: center;
+color: blue;
+<img src=""
+}
+
+span { color: green;}
+.container::after{
+    background-color: rgba(0,0,0,-100);
+    opacity: 0.02;
+}
+
+
+body { background-color: whitesmoke;}
+
+.best {
+    color: aqua;
+}
+
+a 
+{
+    color:blueviolet;
+    display:flex;
+    background-color: white;
+    padding-top: 1rem;
+    margin-left: 25rem;
+
+}
+
+.archies-image {
+width: 300px;
+height: 300px;
+}
+
+
+
+  
