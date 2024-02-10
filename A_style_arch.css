@@ -77,5 +77,57 @@ height: 300px;
 }
 
 
+h2
+{
+    margin: 40px;
+}
 
-  
+
+
+    #h2{
+        background-radius:40 px;
+        background-color:blue;
+    }
+
+.iframe-container
+{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+      }
+      .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+.menu {
+    position: fixed;
+    background: white;
+    width: 100%;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 10;
+}
+.links {
+    display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+.links:hover {
+    font-size: 25px;
+    text-decoration: underline;
+}
+#top
+{
+    background: linear-gradient( lightgreen, #27ae60 );
+    padding:15px;
+    border-radius:40px;
+    color:white;
+    background-color:green;
+}
+

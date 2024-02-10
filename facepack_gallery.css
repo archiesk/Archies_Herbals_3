@@ -1,0 +1,13 @@
+h3{
+    color:black;
+}
+#pink
+{
+    color:pink;
+}
+#decorate
+{
+    padding:30px;
+    background: linear-gradient( lightgreen, #27ae60 );
+    border-radius: 40px;
+}   
