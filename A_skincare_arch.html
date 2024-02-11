@@ -4,7 +4,9 @@
     <title>Archies Herbal</title>
     <link rel="stylesheet" href="A_style_arch.css">
     <script src="checkout.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="sketch.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         ul {
             list-style-type: none;
@@ -17,6 +19,32 @@
         }
     </style>
 
+<title>WhatsApp Order Button</title>
+
+<style>
+    /* Define styles for the container */
+    .scrollable-container {
+      height: 150px; /* Set the height of the container */
+      overflow-y: scroll; /* Enable vertical scrolling */
+      border: 1px solid #ccc; /* Add a border for visual clarity */
+      padding: 10px; /* Add padding for spacing */
+    }
+    
+    /* Optional: Style paragraphs within the container */
+    .scrollable-container p {
+      margin: 0; /* Remove default margin for paragraphs */
+      padding: 5px 0; /* Add padding for spacing between paragraphs */
+    }
+  </style>
+
+<style>
+    /* Define styles for the video container */
+    .video-container {
+      border: 4px solid #cccccc; /* Add a border around the video */
+      border-radius: 5px; /* Optional: Add rounded corners to the border */
+      overflow: hidden; /* Optional: Hide overflowing content */
+    }
+  </style>
 
 </head>
 
@@ -88,37 +116,217 @@ background-attachment: fixed;">
     <center>
         <h2>HERBAL DEODORANT</h2>
 
-
-
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dhWPuLSntd0?si=2QekYg20Sm1VvHWK"
+        <div class="video-container">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/dhWPuLSntd0?si=2QekYg20Sm1VvHWK"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        <p style="color:blue"> This is one of the best non-toxic deodorants.
-            It contains Coconut oil, Oilve Oil, Shea Butter, Beeswax, Licorice Powder, Turmeric Powder, Sandal
-            powder extracts, Arrowroot powder, Cornstarch powder, Baking Soda (a pinch) and combination of aroma
-            oils - Rosemary, Lavender, Ylang ylang, Teatree, Nutmeg, Patchouli,Frankincense.</p>
+        </div>
+        
+        <p style="color:green"> 
+        
+            
+<style> 
+p {
+    text-align: left;
+}
+</style>
+<title>Marquee Text</title>
+<marquee behavior="scroll" direction="right" scrollamount="15">
+    <p style="color:red">  
+    Hazards of CHEMICAL DEODORANTS
+</marquee>
+
+<div class="scrollable-container">
+<p style="color:red"> 
+    <style> 
+        p {
+            text-align: left;
+        }
+        </style>
+ <b>CHEMICAL DEODORANTS</b>
+<br><br>
+Chemical deodorants, particularly those containing synthetic fragrances, aluminum compounds, and other potentially harmful ingredients, have raised concerns among consumers and health experts due to their potential adverse effects. Here are some common effects associated with chemical deodorants:
+<br><br>
+<b>Skin Irritation and Allergic Reactions</b>
+<br>
+People with sensitive skin are particularly susceptible to these adverse effects and may experience discomfort or even dermatitis after using chemical deodorants.
+<br><br>
+<b>Aluminum Exposure</b>
+<br>
+Aluminum compounds, such as aluminum chlorohydrate and aluminum zirconium, are commonly used in antiperspirant deodorants to block sweat glands and reduce perspiration.
+There is some concern that prolonged exposure to aluminum through antiperspirant use may contribute to health issues, including breast cancer, Alzheimer's disease, and kidney problems. However, scientific evidence supporting these claims is inconclusive, and more research is needed to establish a definitive link.
+<br><br>
+<b>Disruption of the Skin Microbiome</b>
+<br>
+The skin has a diverse ecosystem of beneficial bacteria that play a crucial role in maintaining skin health and preventing infections.
+Chemical deodorants, especially those containing antibacterial agents like triclosan or triclocarban, may disrupt the natural balance of the skin microbiome, leading to dysbiosis and increased susceptibility to infections.
+<br><br>
+<b>Hormonal Disruption</b>
+<br>
+Some chemical ingredients found in deodorants, such as parabens and phthalates, are known endocrine disruptors that mimic or interfere with the body's hormones.
+Prolonged exposure to these substances may disrupt hormonal balance, leading to reproductive issues, developmental abnormalities, and other adverse health effects.
+<br><br>
+<b>Environmental Impact</b>
+<br>
+The production, use, and disposal of chemical deodorants can have a significant environmental impact, contributing to air and water pollution, as well as the accumulation of plastic waste in landfills and oceans.
+Synthetic fragrances and other chemical ingredients found in deodorants may also persist in the environment and bioaccumulate in ecosystems, posing risks to wildlife and human health.
+<br><br>
+<b>Respiratory Issues</b>
+<br>
+Inhalation of aerosolized deodorant particles or vapors from chemical deodorants may irritate the respiratory system and exacerbate symptoms in individuals with asthma, allergies, or other respiratory conditions.
+<br>
+<br>
+</div>
+
+<p style="color:green"> 
+    <style> 
+        p {
+            text-align: left;
+        }
+        </style>
+<b>SOLUTION</b>
+<br>
+Homemade deodorant offers a natural, effective, and eco-friendly alternative to commercial deodorants. 
+Give it a try and experience the benefits of homemade deodorant for yourself!
+<br>
+<br>   
+<b>INGREDIENTS</b>
+<br>
+It contains Coconut oil, Oilve Oil, Shea Butter, Beeswax, Licorice Powder, Turmeric Powder, Sandal
+powder extracts, Arrowroot powder, Cornstarch powder, Baking Soda (a pinch) and combination of aroma
+oils - Rosemary, Lavender, Ylang ylang, Teatree, Nutmeg, Patchouli,Frankincense.
+        
+    
+        </p>
         <button onclick="function1()">Buy Now</button>
         </section>
         <br><br>
     </center>
     <section id="facewash"></section>
 
+    <!-- Button to order via WhatsApp -->
+    <button id="whatsappButton">Order via WhatsApp</button>
+
+    <script>
+    document.getElementById('whatsappButton').addEventListener('click', function() {
+        var phoneNumber = '6596464511'; // Replace with your phone number
+        var message = encodeURIComponent('DEODORANT'); // Your message
+    
+        // Construct the WhatsApp URL
+        var url = 'https://wa.me/' + phoneNumber + '?text=' + message;
+    
+        // Open the URL in a new tab
+        window.open(url, '_blank');
+    });
+    </script>
     <hr>
 
     <center>
         <h2>HERBAL FACEWASH</h2>
+    
+               <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P0ffy3Dv9E8?vq=hd1080&autoplay=1&mute1&"
+             title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             allowfullscreen></iframe>
+         </div>
+        <style> 
+            p {
+                text-align: left;
+            }
+            </style>
+            <title>Marquee Text</title>
+            <marquee behavior="scroll" direction="right" scrollamount="15">
+                <p style="color:red">  
+                Hazards of CHEMICAL FACEWASH
+            </marquee>
+            
+            <div class="scrollable-container">
+            <p style="color:red"> 
+                <style> 
+                    p {
+                        text-align: left;
+                    }
+                    </style>
+             <b>CHEMICAL FACEWASH</b>
+            <br><br>
+            Chemical facewashes, particularly those containing harsh synthetic ingredients, may pose several hazards to the skin and overall health. Here are some potential hazards associated with chemical facewashes:
+            <br><br>
+            <b>Skin Irritation and Sensitivity</b>
+            <br>
+            Many chemical facewashes contain harsh surfactants, fragrances, and preservatives that can irritate the skin, leading to redness, itching, dryness, and inflammation.
+            <br><br>
+            <b>Disruption of the Skin Barrier</b>
+            <br>
+            Harsh chemicals in facewashes, such as sulfates and alcohol, can disrupt the skin's natural barrier function, leading to increased transepidermal water loss (TEWL) and decreased skin hydration.
+            <br><br>
+            <b>Over-Drying and Dehydration</b>
+            <br>
+            Some chemical facewashes, especially those formulated for oily or acne-prone skin, contain ingredients that strip away excess oil and moisture from the skin.
+            <br><br>
+            <b>Skin Sensitization and Allergies</b>
+            <br>
+            Certain chemical ingredients found in facewashes, such as fragrances, preservatives (e.g., parabens), and colorants, have the potential to cause allergic reactions and skin sensitization.
+            <br><br>
+            <b>Microbial Resistance</b>
+            <br>
+            Some chemical facewashes contain antimicrobial agents, such as triclosan, which can contribute to the development of antimicrobial resistance in bacteria over time.
+            <br><br>
+            <br>
+            <br>
+            </div>
+            
+            <p style="color:green"> 
+                <style> 
+                    p {
+                        text-align: left;
+                    }
+                    </style>
+            <b>SOLUTION</b>
+            <br>
+            Homemade Liquid Facewash is formulated with natural ingredients such as aloe vera, turmeric, and tea tree oil, known for their cleansing, soothing, and antibacterial properties. These ingredients help combat acne, inflammation, and other skin concerns.
+            <br>
+            <br>   
+            <b>INGREDIENTS</b>
+            <br>
+            It contains concoction of Organic Turmeric powder, Organic Sandalwood powder,Organic Liquorice powder, fresh aloe vera, Almond gum, Organic Castile Soap and combination of aroma
+            oils - Rosemary, Lavender, Ylang ylang, Teatree, Peppermint.
+                   
+                
+                    </p>
+                    <button onclick="functionPrice()"id="top">Price - 5 SGD (for 100 ml)</button>
+                    </section>
+                    <br><br>
+                </center>
+                <section id="facewash"></section>
+            
+                <!-- Button to order via WhatsApp -->
+                <center>
+                    
+                        
+                    
+                <button onclick="functionWhats()"id="top"><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;Order via WhatsApp</button>
+            </center>
+                <script>
+                document.getElementById('whatsappButton').addEventListener('click', function() {
+                    var phoneNumber = '6596464511'; // Replace with your phone number
+                    var message = encodeURIComponent('DEODORANT'); // Your message
+                
+                    // Construct the WhatsApp URL
+                    var url = 'https://wa.me/' + phoneNumber + '?text=' + message;
+                
+                    // Open the URL in a new tab
+                    window.open(url, '_blank');
+                });
+                </script>
+                <hr>     
 
-      
-        <iframe src="https://www.youtube.com/embed/P0ffy3Dv9E8?vq=hd1080&autoplay=1&mute1&" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
-            <p style="color:orangered"> This is the best homemade FACEWASH</p>
-            <button>Buy Now</button>
-           </section>
             <br><br>
     </center>
     <section id="facetoner">
         <hr>
+
         <center>
             <h2>HERBAL FACETONER</h2>
 
@@ -163,7 +371,6 @@ background-attachment: fixed;">
         <hr>
         <center>
             <h2>HERBAL HAND CREAM</h2>
-
 
             <video class="Video_Left" width="600" controls>
                 <source src="FACEWASH_POWDER_Archies_Herbals.mp4" type="video/mp4">
