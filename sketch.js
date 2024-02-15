@@ -54,6 +54,34 @@ function function10()
 {
   window.location.href="#bodycream"
 }
+function function11()
+{
+  window.location.href="A_index_arch.html"
+}
+function function12()
+{
+  window.location.href="#footcream"
+}
+function function13()
+{
+  window.location.href="#foundcream"
+}
+function function14()
+{
+  window.location.href="#foundpowder"
+}
+function function15()
+{
+  window.location.href="#lipstick"
+}
+function function16()
+{
+  window.location.href="#lipbalm"
+}
+function function17()
+{
+  window.location.href="#lipgloss"
+}
 function soapFeedback()
 {
   window.location.href="https://www.youtube.com/"
