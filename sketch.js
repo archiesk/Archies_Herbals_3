@@ -84,5 +84,29 @@ function function17()
 }
 function soapFeedback()
 {
-  window.location.href="https://www.youtube.com/"
+  window.location.href="Feedback"
+}
+function function18()
+{
+  window.location.href="#hairshampoo"
+}
+function function19()
+{
+  window.location.href="#haircond"
+}
+function function20()
+{
+  window.location.href="#hairserum"
+}
+function function22()
+{
+  window.location.href="#leaveincond"
+}
+function function21()
+{
+  window.location.href="#hairvitaliser"
+}
+function function23()
+{
+  window.location.href="#hairmask"
 }
