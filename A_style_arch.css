@@ -122,7 +122,7 @@ h2
     font-size: 25px;
     text-decoration: underline;
 }
-#top,#whatsappButton1,#whatsappButton2,#whatsappButton3,#whatsappButton4,#whatsappButton5,#whatsappButton6,#whatsappButton7,#whatsappButton8,#whatsappButton9,#whatsappButton10,#whatsappButton11,#whatsappButton12,#whatsappButton13,#whatsappButton14,#whatsappButton15
+#top,#whatsappButton1,#whatsappButton2,#whatsappButton3,#whatsappButton4,#whatsappButton5,#whatsappButton6,#whatsappButton7,#whatsappButton8,#whatsappButton9,#whatsappButton10,#whatsappButton11,#whatsappButton12,#whatsappButton13,#whatsappButton14,#whatsappButton15,#modal_open
 {
     background: linear-gradient( lightgreen, #27ae60 );
     padding:3.5px;
