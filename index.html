@@ -9,6 +9,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
   <script src="index.js"></script>
+  <!--<script src="feedback.js"></script> -->
   <link rel="stylesheet" href="index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +17,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile-Friendly HTML App</title>
   <!-- Bootstrap CSS -->
-
 
 
 
@@ -269,14 +269,13 @@
 </head>
 
 
-
-
 <body style="background: url(Bg_leaves_in_white_30.png);
                     background-size: contain;">
   <div class="container">
-    <div class="header">
+   <div class="header">
       <img src="LOGO_Archies_Herbals_Medium_whitegreen.png" class="logo">
-    </div>
+      <img class="archies-image" src="Harvard Medical School Certificate.png" alt="Accreditations">
+    </div> 
     <div class="content"></div>
     <h1>GO GREEN, GO HERBAL</h1>
   </div>
@@ -288,23 +287,28 @@
       <li class="links"><button id="top" onclick="herbamatics()">Herbamatics</button></li>
       <!--<li class="links"><button id="top" onclick="needs()">Home Needs</button></li> -->
 
+      
   </center>
+  
   <!-- Bootstrap JS (optional, for certain components) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <h3>Our Aspiration: Go Green, Go Natural</h3>
-  <br>
-  <iframe src="https://www.youtube.com/embed/ahSxLINHC4k?vq=hd1080&autoplay=1&rel=0" width="380" height="315"
-    title="Archie’s Herbals - What we do!" frameborder="0" allowfullscreen></iframe>
-  <br><br>
-  
+  <!-- START: JavaScript to Fetch and Display Data -->
+  <!--<h1>Happy Stories</h1>
+  <ul id="data-list"></ul> -->
 
- <button id="modal_open" onclick="Feedback()">FeedBack</button>
+  <!-- Firebase Configuration Script -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
+  <script src="feedback.js"></script>
 
-  <br><br>
-  <center>
+   <!-- JavaScript to Fetch and Display Data -->
+    <!--<script src="app.js"></script> -->
+  <!-- END: JavaScript to Fetch and Display Data --> 
+
+   <center>
     <h2 style="color:green">SKIN CARE Products</h2>
 
     <p>GO GREEN, GO HERBAL</p>
@@ -314,7 +318,7 @@
       <div class="mySlides1 fade">
         <div class="numbertext">1 / 10</div>
         <img src="SKIN_SERIES_ALL.jpeg" style="width:350px;">
-        <div class="text">Skin Series </div>
+        <div class="text">Range of Skin Series Products</div>
       </div>
 
       <div class="mySlides1 fade">
@@ -422,7 +426,7 @@
       <div class="mySlides2 fade">
         <div class="numbertext">1 /7</div>
         <img src="Hair_Series.jpeg" style="width:350px;">
-        <div class="text">Herbal Soap</div>
+        <div class="text">Range of HAIR Series Products</div>
       </div>
 
       <div class="mySlides2 fade">
@@ -507,7 +511,7 @@
       <div class="mySlides3 fade">
         <div class="numbertext">1 / 6</div>
         <img src="Herbamatics_Series.jpeg" style="width:350px;">
-        <div class="text">Herbal Soap</div>
+        <div class="text">Range of Herbal Cosmetics Products</div>
       </div>
 
       <div class="mySlides3 fade">
@@ -574,6 +578,15 @@
       </script>
   </center>
 
+  <h3>Our Aspiration: Go Green, Go Natural</h3>
+  <br>
+  <iframe src="https://www.youtube.com/embed/ahSxLINHC4k?vq=hd1080&autoplay=1&rel=0" width="380" height="315"
+  title="Archie’s Herbals - What we do!" frameborder="0" allowfullscreen></iframe>
+<br><br>
+
+<button id="modal_open" onclick="Feedback()">FeedBack</button>
+<!-- <h1>Happy Stories</h1>
+<ul id="data-list"></ul> -->
 
 <!--Feedback body-->
 <div id="modal_wrapper"class="modal-dialog modal-xl">
@@ -593,8 +606,8 @@
                   <input type="text" size="48" name="subject" value=""></label></p>
           <p><label>Feedback<strong>*</strong><br>
                  <textarea required name="message" cols="48" rows="8"></textarea></label></p>        
-          <p><label>Ask us your enquiry<strong>*</strong><br>
-                  <textarea required name="message" cols="48" rows="8"></textarea></label></p>
+          <p><label>Ask us your enquiry<br>
+                  <textarea name="message" cols="48" rows="8"></textarea></label></p>
           <p><input type="submit" id="feedbackForm"  onclick="submitForm()" value="Send Message"></p>
       </form>
 

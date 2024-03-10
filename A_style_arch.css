@@ -110,6 +110,7 @@ h2
     margin-top: 0px;
     top: 0px;
     z-index: 15;
+    justify-content: center;
 }
 .links {
     display: inline;
