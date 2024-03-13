@@ -10,6 +10,7 @@
   <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
   <script src="index.js"></script>
   <!--<script src="feedback.js"></script> -->
+  <script src="feedbacktry.js"></script> 
   <link rel="stylesheet" href="index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,8 +39,8 @@
       vertical-align: middle;
     }
 
-  /* Slideshow container */
- .slideshow-container1 {
+    /* Slideshow container */
+    .slideshow-container1 {
       max-width: 600px;
       position: relative;
       margin: auto;
@@ -98,8 +99,8 @@
 
 
 
- /* Slideshow container */
- .slideshow-container2 {
+    /* Slideshow container */
+    .slideshow-container2 {
       max-width: 600px;
       position: relative;
       margin: auto;
@@ -164,8 +165,8 @@
     }
 
 
-     /* Slideshow container */
-     .slideshow-container3 {
+    /* Slideshow container */
+    .slideshow-container3 {
       max-width: 600px;
       position: relative;
       margin: auto;
@@ -193,7 +194,10 @@
     }
 
     /* The dots/bullets/indicators */
-    .dot,.dot1,.dot2,.dot3 {
+    .dot,
+    .dot1,
+    .dot2,
+    .dot3 {
       height: 15px;
       width: 15px;
       margin: 0 2px;
@@ -231,38 +235,36 @@
     }
 
     /*Feedback*/
-            #modal_wrapper.overlay::before {
-            content: " ";
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            z-index: 100;
-            top: 0;
-            left: 0;
-            background: #000;
-            background: rgba(0, 0, 0, 0.7);
-        }
+    #modal_wrapper.overlay::before {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background: #000;
+      background: rgba(0, 0, 0, 0.7);
+    }
 
-        #modal_window {
-            display: none;
-            z-index: 200;
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            width: 520px;
-            overflow: auto;
-            padding: 10px 20px;
-            background: #fff;
-            border: 5px solid #999;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
+    #modal_window {
+      display: none;
+      z-index: 200;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 520px;
+      overflow: auto;
+      padding: 10px 20px;
+      background: #fff;
+      border: 5px solid #999;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
 
-        #modal_wrapper.overlay #modal_window {
-            display: block;
-        }
-  
-    
+    #modal_wrapper.overlay #modal_window {
+      display: block;
+    }
   </style>
 
   <!--Sliding Gallery - END-->
@@ -272,14 +274,19 @@
 <body style="background: url(Bg_leaves_in_white_30.png);
                     background-size: contain;">
   <div class="container">
-   <div class="header">
-      <img src="LOGO_Archies_Herbals_Medium_whitegreen.png" class="logo">     
+    <div class="header">  
+      <img src="LOGO_Archies_Herbals_Medium_whitegreen.png" width=""100" height=""100" class="logo">
+      <center>
       <img class="archies-image" src="Harvard Medical School Certificate.png" alt="Accreditations">
+      <img class="archies-image" src="Trichology.png" alt="Accreditations">
+    </center>
+
+    <br><br>
       <h1>GO GREEN, GO HERBAL</h1>
-      
-    </div> 
+
+    </div>
     <div class="content"></div>
-    
+
   </div>
   <center>
     <ul class="menu">
@@ -289,9 +296,9 @@
       <li class="links"><button id="top" onclick="herbamatics()">Herbamatics</button></li>
       <!--<li class="links"><button id="top" onclick="needs()">Home Needs</button></li> -->
 
-      
+
   </center>
-  
+
   <!-- Bootstrap JS (optional, for certain components) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
@@ -304,26 +311,26 @@
   <!-- Firebase Configuration Script -->
   <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
-  <script src="feedback.js"></script>
+  <!--<script src="feedback.js"></script> -->
 
-   <!-- JavaScript to Fetch and Display Data -->
-    <!--<script src="app.js"></script> -->
-  <!-- END: JavaScript to Fetch and Display Data --> 
+  <!-- JavaScript to Fetch and Display Data -->
+  <!--<script src="app.js"></script> -->
+  <!-- END: JavaScript to Fetch and Display Data -->
 
   <br>
   <br>
 
-   <center>
+  <center>
     <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <h2 style="color:green">SKIN CARE Products</h2>
 
     <p>GO GREEN, GO HERBAL</p>
@@ -384,7 +391,7 @@
         <div class="text">Herbal Hand Cream</div>
       </div>
 
-     <!-- <div class="mySlides1 fade">
+      <!-- <div class="mySlides1 fade">
         <div class="numbertext">10 / 10</div>
         <img src="FOOT_CREAM.jpeg" style="width:350px;">
         <div class="text">Herbal Foot Cream</div>
@@ -408,24 +415,24 @@
     <script>
       let slideIndex1 = 0;
       showSlides1();
-      
+
       function showSlides1() {
         let i;
         let slides1 = document.getElementsByClassName("mySlides1");
         let dots1 = document.getElementsByClassName("dot1");
         for (i = 0; i < slides1.length; i++) {
-          slides1[i].style.display = "none";  
+          slides1[i].style.display = "none";
         }
         slideIndex1++;
-        if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+        if (slideIndex1 > slides1.length) { slideIndex1 = 1 }
         for (i = 0; i < dots1.length; i++) {
           dots1[i].className = dots1[i].className.replace(" active", "");
         }
-        slides1[slideIndex1-1].style.display = "block";  
-        dots1[slideIndex1-1].className += " active";
+        slides1[slideIndex1 - 1].style.display = "block";
+        dots1[slideIndex1 - 1].className += " active";
         setTimeout(showSlides1, 2000); // Change image every 2 seconds
       }
-      </script>
+    </script>
 
   </center>
 
@@ -592,43 +599,47 @@
         }
       </script>
   </center>
-
+  <br><br><br>
+<center>
   <h3>Our Aspiration: Go Green, Go Natural</h3>
   <br>
   <iframe src="https://www.youtube.com/embed/ahSxLINHC4k?vq=hd1080&autoplay=1&rel=0" width="380" height="315"
-  title="Archie’s Herbals - What we do!" frameborder="0" allowfullscreen></iframe>
-<br><br>
+    title="Archie’s Herbals - What we do!" frameborder="0" allowfullscreen></iframe>
+  <br><br>
 
-<button id="modal_open" onclick="Feedback()">FeedBack</button>
-<!-- <h1>Happy Stories</h1>
+  <button id="modal_open" onclick="Feedback()">FeedBack</button>
+  <!-- <h1>Happy Stories</h1>
 <ul id="data-list"></ul> -->
 
-<!--Feedback body-->
-<div id="modal_wrapper"class="modal-dialog modal-xl">
-  <div id="modal_window">
+  <!--Feedback body-->
+  <div id="modal_wrapper" class="modal-dialog modal-xl">
+    <div id="modal_window">
 
       <div style="text-align: right;"><a id="modal_close" href="#">close <b>X</b></a></div>
 
       <p>Please give your feedback</p>
 
       <form id="modal_feedback" method="POST" action="#" accept-charset="UTF-8">
-          <p><label>Your Name<strong>*</strong><br>
-                  <input type="text" autofocus required size="48" name="name" value=""></label></p>
-          <p><label>Email Address<strong>*</strong><br>
-                  <input type="email" required title="Please enter a valid email address" size="48" name="email"
-                      value=""></label></p>
-          <p><label>Product<br>
-                  <input type="text" size="48" name="subject" value=""></label></p>
-          <p><label>Feedback<strong>*</strong><br>
-                 <textarea required name="message" cols="48" rows="8"></textarea></label></p>        
-          <p><label>Ask us your enquiry<br>
-                  <textarea name="message" cols="48" rows="8"></textarea></label></p>
-          <p><input type="submit" id="feedbackForm"  onclick="submitForm()" value="Send Message"></p>
+        <p><label>Your Name<strong>*</strong><br>
+            <input type="text" autofocus required size="48" name="name" value=""></label></p>
+        <p><label>Email Address<strong>*</strong><br>
+            <input type="email" required title="Please enter a valid email address" size="48" name="email"
+              value=""></label></p>
+        <p><label>Product<br>
+            <input type="text" size="48" name="subject" value=""></label></p>
+        <p><label>Feedback<strong>*</strong><br>
+            <textarea required name="message" cols="48" rows="8"></textarea></label></p>
+        <p><label>Ask us your enquiry<br>
+            <textarea name="message" cols="48" rows="8"></textarea></label></p>
+        <p><input type="submit" id="feedbackForm" onclick="submitForm()" value="Send Message"></p>
       </form>
+<br><br><br>
 
-  </div> <!-- #modal_window -->
-</div> <!-- #modal_wrapper -->
 
+    </div> <!-- #modal_window -->
+  </div> <!-- #modal_wrapper -->
+</center>
+<br><br><br><br><br><br>
 
 </body>
 
