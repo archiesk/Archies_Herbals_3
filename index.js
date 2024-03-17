@@ -79,11 +79,22 @@ function Feedback() {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       // Perform validation and processing here
-        
-      firebase.database().ref("/"+form.name.value).update({
+       
+      //--var ref = database.ref("/users");
+      firebase.database().ref("/users/"+form.name.value).update({
+        name: form.name.value,
         email: form.email.value,
         feedback: form.message.value
     });
             });
 
   }
+
+
+
+
+
+
+
+
+ 
