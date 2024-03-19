@@ -41,11 +41,12 @@ function getData() {
         console.log(firebase_message_id);
         console.log(message_data);
         name = message_data['name'];
+        city = message_data['city'];
+        products = message_data['products'];
         message = message_data['feedback'];
         //like = message_data['like'];
-        name_with_tag = "<h3> " + name + "🤗 ";
-        message_with_tag = "<h5 class='message_h5'>" + message + "</h4><hr>";
-       
+        name_with_tag = "<h4> " + name + "  " + city + "🤗";
+        message_with_tag = "<h5 class='message_h5'>" + products + ":" +  "<h6 class='message_h6'>" + message + "</h3><hr>";
         row = name_with_tag + message_with_tag ;
         document.getElementById("list-container").innerHTML += row;
         //End code

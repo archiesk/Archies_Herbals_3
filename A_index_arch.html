@@ -611,31 +611,58 @@
   <br><br>
 
   <button id="modal_open" onclick="Feedback()">FeedBack</button>
-  <!-- <h1>Happy Stories</h1>
-<ul id="data-list"></ul> -->
+  <br><br>
+  <h1>Happy Stories</h1>
+<!--<ul id="data-list"></ul> -->
 
   <!--Feedback body-->
   <div id="modal_wrapper" class="modal-dialog modal-xl">
     <div id="modal_window">
 
-      <div style="text-align: right;"><a id="modal_close" href="#">close <b>X</b></a></div>
+      <div style="text-align: right;"><a id="modal_close" href="#">Close <b>X</b></a></div>
 
       <p>Please give your feedback</p>
 
       <form id="modal_feedback" method="POST" action="#" accept-charset="UTF-8">
-        <p><label>Your Name , City <strong>*</strong><br>
+        <p><label>Your Name<strong>*</strong><br>
             <input type="text" autofocus required size="48" name="name" value=""></label></p>
+            <p><label>City<strong>*</strong><br>
+              <input type="text" autofocus required size="48" name="city" value=""></label></p>
         <p><label>Email Address<strong>*</strong><br>
             <input type="email" required title="Please enter a valid email address" size="48" name="email"
               value=""></label></p>
-        <p><label>Product<br>
-            <input type="text" size="48" name="subject" value=""></label></p>
+        <p><label>Product Used<strong>*</strong><br>
+                    <select id="product" name="products">
+          <option value="Product">Archies Herbals Products</option>
+          <option value="Homemade Herbal BODY SOAP">Homemade Herbal BODY SOAP</option>
+          <option value="Homemade Herbal FACE PACK">Homemade Herbal FACE PACK</option>
+          <option value="Homemade Herbal DEODORANT">Homemade Herbal DEODORANT</option>
+          <option value="Homemade Herbal FACEWASH">Homemade Herbal FACEWASH</option>
+          <option value="Homemade Herbal FACETONER">Homemade Herbal FACETONER</option>
+          <option value="Homemade Herbal MOISTURISER">Homemade Herbal MOISTURISER</option>
+          <option value="Homemade Herbal SKIN LOTION">Homemade Herbal SKIN LOTION</option>
+          <option value="Homemade Herbal HAND CREAM">Homemade Herbal HAND CREAM</option>
+          <option value="Homemade Herbal FOOT CREAM">Homemade Herbal FOOT CREAM</option>
+          <option value="Homemade Herbal VEGAN HAIR SHAMPOO">Homemade Herbal VEGAN HAIR SHAMPOO</option>
+          <option value="Homemade Herbal VEGAN HAIR CONDITIONER">Homemade Herbal VEGAN HAIR CONDITIONER</option>
+          <option value="Homemade Herbal VEGAN HAIR SERUM">Homemade Herbal VEGAN HAIR SERUM</option>
+          <option value="Homemade Herbal HAIR VITALISER">Homemade Herbal HAIR VITALISER</option>
+          <option value="Homemade Herbal VEGAN LEAVE IN HAIR CONDITIONER">Homemade Herbal VEGAN LEAVE IN HAIR CONDITIONER</option>
+          <option value="Homemade Herbal VEGAN REVITALISING HAIR MASK">Homemade Herbal VEGAN REVITALISING HAIR MASK</option>
+          <option value="Homemade Herbal HERBAL FACE FOUNDATION CREAM">Homemade Herbal HERBAL FACE FOUNDATION CREAM</option>
+          <option value="Homemade Herbal FACE FOUNDATION POWDER">Homemade Herbal FACE FOUNDATION POWDER</option>
+          <option value="Homemade Herbal LIPSTICK">Homemade Herbal LIPSTICK</option>
+          <option value="Homemade Herbal LIP BALM">Homemade Herbal LIP BALM</option>
+          <option value="Homemade Herbal LIP GLOSS">Homemade Herbal LIP GLOSS</option>
+        </select> </label></p>
+      </label>
+
         <p><label>Feedback<strong>*</strong><br>
             <textarea required name="message" cols="48" rows="8"></textarea></label></p>
         <p><label>Ask us your enquiry<br>
             <textarea name="enquiry" cols="48" rows="8"></textarea></label></p>
-        <p><input type="submit" id="feedbackForm" onclick="submitForm()" value="Send Message"></p>
-      </form>
+            <p><input type="submit" id="top" onclick="submitForm()" value="Send Message and click Close"></p>
+                  </form>
 <br><br><br>
 
     </div> <!-- #modal_window -->

@@ -84,9 +84,11 @@ function Feedback() {
       firebase.database().ref("/users/"+form.name.value).update({
         name: form.name.value,
         email: form.email.value,
-        feedback: form.message.value
+        feedback: form.message.value,
+        city: form.city.value,
+        products: form.products.value
     });
-            });
+    });
 
   }
 
